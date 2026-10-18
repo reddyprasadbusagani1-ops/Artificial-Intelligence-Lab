@@ -1,162 +1,300 @@
-# JNTUA R23 - Artificial Intelligence Lab
 
-| | |
+# Artificial Intelligence Lab
+
+**JNTUA R23 | B.Tech Artificial Intelligence and Data Science**
+
+[![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
+[![Course](https://img.shields.io/badge/Course-AI%20Lab-purple.svg)]()
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
+## Project Information
+
+| Detail | Information |
 |---|---|
-| **Subject** | Artificial Intelligence Lab |
-| **Subject Code** | 23A31301P |
-| **Regulations** | JNTUA R23 (B.Tech Artificial Intelligence & Data Science) |
-| **Language** | Python 3.10 or newer (standard library only) |
-| **Platform** | Windows 11 (also runs on macOS/Linux) |
+| Subject | Artificial Intelligence Lab |
+| Subject Code | 23A31301P |
+| Regulations | JNTUA R23 |
+| Branch | B.Tech Artificial Intelligence and Data Science |
+| Programming Language | Python 3.10 or later |
+| Platform | Windows 10/11, macOS, Linux |
+| Author | Busagani Reddy Prasad |
+| GitHub | [reddyprasadbusagani1-ops](https://github.com/reddyprasadbusagani1-ops) |
 
-This project contains all 12 experiments as runnable Python programs. Each experiment folder has a `main.py` and a `README.md` with the aim, theory, algorithm, full source code, sample input, expected output (captured from a real run) and result.
+## About This Repository
 
-> The list of 12 experiments follows the project brief used to create this package. Please compare it with your official R23 syllabus copy and your lab instructor's instructions.
+This repository contains Python implementations of 12 Artificial Intelligence lab experiments for academic learning and practical programming.
 
-## 1. The 12 Experiments
+Each experiment is organized into a separate folder with a runnable `main.py` program and a `README.md` containing the aim, theory, algorithm, source code, sample input, expected output, and result, where applicable.
 
-| No. | Folder | Description |
+The programs are designed to run using Python's standard library without requiring third-party packages.
+
+**Academic note:** Please compare the experiment list with your official JNTUA R23 syllabus and your faculty's instructions before treating it as the prescribed lab list.
+
+## Table of Contents
+
+1. [List of Experiments](#list-of-experiments)
+2. [Software Requirements](#software-requirements)
+3. [Installation and Setup](#installation-and-setup)
+4. [Project Structure](#project-structure)
+5. [Running an Experiment](#running-an-experiment)
+6. [Experiment Launcher](#experiment-launcher)
+7. [Learning Objectives](#learning-objectives)
+8. [Notes and Limitations](#notes-and-limitations)
+9. [Author](#author)
+10. [License](#license)
+
+## List of Experiments
+
+| No. | Experiment | Description |
 |---|---|---|
-| 1 | `Experiment_01_BFS` | **Breadth First Search** - traverses a graph level by level with a queue, shows traversal order, levels and the fewest-edge path. |
-| 2 | `Experiment_02_Best_First_Search` | **Greedy Best First Search** - uses heuristic values to choose the next node, shows each step and the path, and compares its cost with the optimal cost. |
-| 3 | `Experiment_03_DFS` | **Depth First Search** - recursive and stack-based traversal of a graph, plus a path to the goal. |
-| 4 | `Experiment_04_Heuristic_Search` | **Heuristic Search** - Manhattan-distance heuristic on a maze; compares BFS, hill climbing (gets stuck) and greedy best-first. |
-| 5 | `Experiment_05_Astar_AOstar` | **A\* and AO\*** - A* shortest path on a graph and AO* solution-graph search on an AND-OR graph, with the differences explained. |
-| 6 | `Experiment_06_Water_Jug` | **Water Jug Problem** - BFS over the state space; prints every state of the solution. |
-| 7 | `Experiment_07_Alpha_Beta_Pruning` | **Minimax with Alpha-Beta Pruning** - best value, visited leaves and pruning messages. |
-| 8 | `Experiment_08_Eight_Queens` | **8-Queens** - backtracking; shows valid boards and the number of solutions (92). |
-| 9 | `Experiment_09_Default_Reasoning_Meeting` | **Meeting Scheduling by Default Reasoning** - five people, rooms, day/time/place, documented assumptions, and retraction of a conclusion when new information arrives. |
-| 10 | `Experiment_10_Unification` | **Unification** - first-order terms, substitutions, compound terms, occurs check, successful and failed examples. |
-| 11 | `Experiment_11_Knowledge_Base` | **Knowledge-Based System** - family facts and rules, backward chaining, queries with proof explanations. |
-| 12 | `Experiment_12_Eight_Puzzle_Tic_Tac_Toe` | **8-Puzzle and Tic-Tac-Toe** - A* with misplaced-tiles and Manhattan heuristics (statistics table), and playable Tic-Tac-Toe with minimax + alpha-beta (nodes/cutoffs table). |
+| 1 | Breadth First Search (BFS) | Traverses a graph level by level using a queue and finds shortest paths in an unweighted graph. |
+| 2 | Greedy Best-First Search | Uses heuristic values to select the next node and explores a path toward the goal. |
+| 3 | Depth First Search (DFS) | Implements recursive and stack-based graph traversal. |
+| 4 | Heuristic Search | Explores maze-solving techniques using Manhattan distance, BFS, hill climbing, and greedy best-first search. |
+| 5 | A* and AO* Search | Demonstrates A* shortest-path search and AO* search on an AND-OR graph. |
+| 6 | Water Jug Problem | Models the water jug problem as a state space and solves it using BFS. |
+| 7 | Minimax with Alpha-Beta Pruning | Evaluates game trees and prunes branches that cannot affect the final decision. |
+| 8 | Eight Queens Problem | Uses backtracking to find valid arrangements of eight queens on a chessboard. |
+| 9 | Default Reasoning and Meeting Scheduling | Demonstrates reasoning with assumptions and revising conclusions when new information arrives. |
+| 10 | Unification | Demonstrates logical terms, substitutions, compound expressions, and the occurs check. |
+| 11 | Knowledge-Based System | Demonstrates facts, rules, backward chaining, and query explanations. |
+| 12 | Eight Puzzle and Tic-Tac-Toe | Uses A* search for the Eight Puzzle and Minimax with Alpha-Beta Pruning for Tic-Tac-Toe. |
 
-See also [`EXPERIMENT_INDEX.md`](EXPERIMENT_INDEX.md).
+For the experiment folder names and additional details, see [`EXPERIMENT_INDEX.md`](EXPERIMENT_INDEX.md).
 
-## 2. Software Requirements
+## Software Requirements
 
-* Windows 11 (or Windows 10), any modern PC
-* **Python 3.10 or newer** (3.12 recommended)
-* Optional: Visual Studio Code with the *Python* extension; Git or GitHub Desktop (only for uploading to GitHub)
-* No third-party packages, paid software, API keys or internet connection are needed to run the programs (`requirements.txt` only documents this).
+- Python 3.10 or later.
+- A computer running Windows, macOS, or Linux.
+- Command Prompt or a terminal.
+- A text editor such as Notepad or Visual Studio Code.
 
-## 3. Installing Python on Windows 11
+Optional tools:
 
-1. Open <https://www.python.org/downloads/> and download the latest **Python 3** installer for Windows.
-2. Run the installer. On the first screen **tick "Add python.exe to PATH"**, then click *Install Now*.
-3. Open **Command Prompt** (press the Windows key, type `cmd`, press Enter) and check:
+- Git for version control.
+- GitHub account for hosting the project.
+- GitHub Desktop for graphical repository management.
+
+No third-party Python packages, API keys, or internet connection are required to run the programs locally.
+
+## Installation and Setup
+
+### Step 1: Install Python
+
+Download Python from the official website:
+
+https://www.python.org/downloads/
+
+On Windows, enable **Add Python to PATH** during installation if the option is available.
+
+### Step 2: Verify Python Installation
+
+Open Command Prompt and run:
 
 ```bat
 python --version
 ```
 
-It should print `Python 3.10.x` or higher. If `python` is not recognised, try `py --version`. (If Windows opens the Microsoft Store when you type `python`, install Python from python.org as above, or turn off the *python.exe* "App execution alias" in *Settings > Apps > Advanced app settings > App execution aliases*.)
-
-## 4. Downloading and Opening the Project
-
-1. Download `JNTUA_R23_Artificial_Intelligence_Lab_Master.zip`.
-2. Right-click the ZIP file, choose **Extract All...**, pick a folder (for example `C:\Users\<you>\Documents`) and click *Extract*. You get a folder named `JNTUA_R23_AI_Lab`.
-
-**Option A - Visual Studio Code**
-
-1. Start VS Code, choose **File > Open Folder...** and select `JNTUA_R23_AI_Lab`.
-2. Open an experiment, e.g. `Experiment_01_BFS\main.py`.
-3. Click the **Run (triangle)** button at the top right, or open the terminal (**Terminal > New Terminal**) and type a command from section 5.
-
-**Option B - Command Prompt**
+If the command is not recognized, try:
 
 ```bat
-cd C:\Users\<you>\Documents\JNTUA_R23_AI_Lab
+py --version
 ```
 
-(Replace the path with the folder where you extracted the project.)
+Confirm that Python 3.10 or later is installed.
 
-## 5. Running an Individual Experiment
+### Step 3: Download the Repository
 
-From the project root (`JNTUA_R23_AI_Lab`):
+Open the repository:
+
+https://github.com/reddyprasadbusagani1-ops/Artificial-Intelligence-Lab
+
+Click **Code → Download ZIP**, then extract the downloaded file.
+
+Alternatively, clone it using Git:
+
+```bat
+git clone https://github.com/reddyprasadbusagani1-ops/Artificial-Intelligence-Lab.git
+```
+
+Open the extracted or cloned project folder in Command Prompt.
+
+For example, if the folder is in Downloads:
+
+```bat
+cd "%USERPROFILE%\Downloads\Artificial-Intelligence-Lab"
+```
+
+Adjust the path if your folder is located elsewhere.
+
+## Project Structure
+
+The intended folder organization is:
+
+```text
+Artificial-Intelligence-Lab/
+|
+|-- README.md
+|-- EXPERIMENT_INDEX.md
+|-- requirements.txt
+|-- .gitignore
+|-- LICENSE
+|-- run_experiment.bat
+|
+|-- Experiment_01_BFS/
+|   |-- README.md
+|   `-- main.py
+|
+|-- Experiment_02_Best_First_Search/
+|   |-- README.md
+|   `-- main.py
+|
+|-- Experiment_03_DFS/
+|   |-- README.md
+|   `-- main.py
+|
+|-- Experiment_04_Heuristic_Search/
+|   |-- README.md
+|   `-- main.py
+|
+|-- Experiment_05_Astar_AOstar/
+|   |-- README.md
+|   `-- main.py
+|
+|-- Experiment_06_Water_Jug/
+|   |-- README.md
+|   `-- main.py
+|
+|-- Experiment_07_Alpha_Beta_Pruning/
+|   |-- README.md
+|   `-- main.py
+|
+|-- Experiment_08_Eight_Queens/
+|   |-- README.md
+|   `-- main.py
+|
+|-- Experiment_09_Default_Reasoning_Meeting/
+|   |-- README.md
+|   `-- main.py
+|
+|-- Experiment_10_Unification/
+|   |-- README.md
+|   `-- main.py
+|
+|-- Experiment_11_Knowledge_Base/
+|   |-- README.md
+|   `-- main.py
+|
+`-- Experiment_12_Eight_Puzzle_Tic_Tac_Toe/
+    |-- README.md
+    `-- main.py
+```
+
+This is the intended structure. Your actual repository may contain additional files; verify the folder names and files before relying on the example commands.
+
+## Running an Experiment
+
+Run commands from the project root directory.
+
+### Experiment 1: Breadth First Search
 
 ```bat
 python Experiment_01_BFS\main.py
+```
+
+### Experiment 5: A* and AO* Search
+
+```bat
 python Experiment_05_Astar_AOstar\main.py
+```
+
+### Experiment 8: Eight Queens Problem
+
+```bat
+python Experiment_08_Eight_Queens\main.py
+```
+
+### Experiment 12: Eight Puzzle and Tic-Tac-Toe
+
+```bat
 python Experiment_12_Eight_Puzzle_Tic_Tac_Toe\main.py
 ```
 
-or change into the experiment folder first:
+If `python` is not recognized, use `py` instead.
+
+For example:
+
+```bat
+py Experiment_01_BFS\main.py
+```
+
+You can also enter an experiment folder and run its program directly:
 
 ```bat
 cd Experiment_08_Eight_Queens
 python main.py
 ```
 
-Use `py main.py` instead of `python main.py` if `python` is not recognised. Many programs ask for input; **press Enter to accept the default value shown in square brackets**. Experiments 4, 5 need no input; Experiments 11 and 12 have interactive prompts / menus (type `quit` or `0` to leave).
+Follow the program's on-screen instructions. If a default input is shown in square brackets, press Enter to accept it.
 
-## 6. Using `run_experiment.bat`
+## Experiment Launcher
 
-Double-click `run_experiment.bat` (or run it in Command Prompt from the project folder):
+If `run_experiment.bat` is present in the project root, you can use it to launch experiments on Windows.
+
+### Open the experiment menu
 
 ```bat
 run_experiment.bat
 ```
 
-A menu lists the 12 experiments. Type a number from 1 to 12 and press Enter; the program runs, then press any key to return to the menu. Type `0` to exit.
+Choose a number from 1 to 12 and press Enter.
 
-You can also run an experiment directly by giving its number:
+Enter `0` to exit the menu.
+
+### Run a specific experiment
+
+For example, to launch Experiment 7:
 
 ```bat
 run_experiment.bat 7
 ```
 
-The script looks for the `py` launcher first and then `python`, and tells you if Python is not installed.
+The launcher must be present and correctly configured for these commands to work.
 
-## 7. Uploading the Project to GitHub
+## Learning Objectives
 
-First create an **empty** repository on <https://github.com> (click **New**, give it a name such as `JNTUA_R23_AI_Lab`; do not add a README or licence because the project already has them).
+Through these experiments, students can practise:
 
-**Method 1 - Git (Command Prompt or VS Code terminal)**
+- Graph traversal using BFS and DFS.
+- Uninformed and heuristic search techniques.
+- A* and AO* search concepts.
+- State-space representation and problem solving.
+- Minimax and Alpha-Beta Pruning.
+- Backtracking for constraint-satisfaction problems.
+- Default reasoning and unification.
+- Knowledge representation and backward chaining.
+- Applying classical Artificial Intelligence techniques to practical problems.
 
-Install Git from <https://git-scm.com/download/win>, then in the project folder:
+## Notes and Limitations
 
-```bat
-git init
-git add .
-git commit -m "Add JNTUA R23 AI Lab experiments"
-git branch -M main
-git remote add origin https://github.com/<your-username>/JNTUA_R23_AI_Lab.git
-git push -u origin main
-```
+- The programs are intended for educational use.
+- Input formats and sample outputs are documented in individual experiment folders where provided.
+- Sample graphs, mazes, schedules, and other demonstration data may be illustrative.
+- The AO* implementation is intended for acyclic AND-OR graphs.
+- The knowledge-based system uses a closed-world assumption: a query that cannot be proven is treated as false by the described implementation.
+- Search and game-tree execution times depend on the input and computer.
+- Always check the actual source code and run the programs to verify their behavior.
 
-If Git asks who you are, set it once with `git config --global user.name "Your Name"` and `git config --global user.email "you@example.com"`. When pushing, sign in through the browser window that opens.
+## Author
 
-**Method 2 - GitHub Desktop**
+**Busagani Reddy Prasad**
 
-1. Install and sign in to GitHub Desktop (<https://desktop.github.com/>).
-2. Choose **File > Add local repository...**, select the `JNTUA_R23_AI_Lab` folder, and if asked, click *create a repository*.
-3. Type a summary (e.g. "Add JNTUA R23 AI Lab experiments") and click **Commit to main**.
-4. Click **Publish repository**, choose the name, and click *Publish*.
+B.Tech — Artificial Intelligence and Data Science
 
-The included `.gitignore` keeps cache folders and virtual environments out of the repository.
+GitHub: [@reddyprasadbusagani1-ops](https://github.com/reddyprasadbusagani1-ops)
 
-## 8. Project Structure
+## License
 
-```text
-JNTUA_R23_AI_Lab/
-|-- README.md                  (this file)
-|-- requirements.txt
-|-- .gitignore
-|-- LICENSE                    (MIT)
-|-- run_experiment.bat
-|-- EXPERIMENT_INDEX.md
-|-- Experiment_01_BFS/ ... Experiment_12_Eight_Puzzle_Tic_Tac_Toe/
-|     |-- README.md
-|     `-- main.py
-```
+This project is distributed under the MIT License, provided the repository's `LICENSE` file contains the MIT License text.
 
-## 9. Notes and Limitations
-
-* Programs print plain ASCII text so they work in any Windows console.
-* AO* (Experiment 5) is implemented for **acyclic** AND-OR graphs.
-* The knowledge base (Experiment 11) uses the closed-world assumption: what cannot be proven is answered *No*.
-* Experiment 12 runs a full minimax search for comparison, so the first computer move on an empty board takes about a second.
-* Sample data (busy schedules, graphs, mazes) is invented for demonstration; edit the constants at the top of each `main.py` to experiment.
-
-## 10. Licence
-
-Released under the MIT Licence - see [`LICENSE`](LICENSE).
+See [`LICENSE`](LICENSE) for the complete terms.
