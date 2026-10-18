@@ -1,0 +1,10 @@
+# JNTUA R23 Artificial Intelligence Lab (23A31301P)
+# ---------------------------------------------------
+# All 12 experiments use ONLY the Python standard library (Python 3.10 or newer).
+# There are no third-party packages to install, no paid software and no API keys.
+#
+# Standard-library modules used: collections, dataclasses, heapq, itertools,
+# math, re, ast, time.
+#
+# If you later add a package, list it below, for example:
+# numpy>=1.26
